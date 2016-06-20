@@ -775,9 +775,7 @@
 })(typeof define == 'function'
 	? define
 	: function (factory) {
-	    typeof module != 'undefined'
-		? (module.exports = factory())
-		: (jQuery.mapster_when = factory());
+		jQuery.mapster_when = factory();
 	}
 // Boilerplate for AMD, Node, and browser global
 );
